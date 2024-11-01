@@ -13,10 +13,10 @@ chrome.alarms.onAlarm.addListener((alarm) => {
                 // 创建通知
                 chrome.notifications.create({
                     type: 'image',
-                    iconUrl: 'image/speed.png', 
+                    iconUrl: 'speed.png', 
                     title: '简易任务表',
                     message: `是时候去做: ${nextTaskEvent}`,
-                    imageUrl: 'image/speed.png' 
+                    imageUrl: 'speed.png' 
                 });
 
 
