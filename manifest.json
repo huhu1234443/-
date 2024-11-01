@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "去做什么事呢",
+  "version": "1.0",
+  "description": "A simple todo timer extension.",
+  "permissions": ["storage", "alarms","notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "image/speed.png",
+      "48": "image/speed.png",
+      "128": "image/speed.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["audio.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

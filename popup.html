@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Todo Timer</title>
+</head>
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    padding: 15px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#todo-list {
+    margin-bottom: 15px;
+}
+
+.task-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 2;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    background-color: #00ff6a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0089b3;
+}
+
+button:active {
+    background-color: #94004f;
+}
+
+audio {
+    display: none;
+}
+</style>
+<body>
+    <div id="todo-list">
+    </div>
+    <button id="add-row">增加日程</button>
+    <button id="delete">删除一行</button>
+    <button id="save">保存</button>
+    <button id="start">开始专注</button>
+    <audio id="alert-sound" src="audio.mp3" preload="auto"></audio>
+    <script src="popup.js"></script>
+</body>
+</html>
